@@ -37,8 +37,14 @@ def ckeck_the_list_of_cars(car_list: list) -> bool:
     and it must return the number of cars with different model if it is valid
     """
 
-    raise NotImplementedError()
+    car_list = set(car_list)
+    car_list = list(car_list)
 
+    if len(car_list) >= 3:
+        return True
+    else:
+        return False
+    
 
 
 def check_if_you_can_drive(can_you_drive: str) -> bool:
